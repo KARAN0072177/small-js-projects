@@ -122,3 +122,14 @@ button:active {
     background-color: white;
     color: #ff9500;
 }
+
+/* Add this to your existing CSS */
+.key-press {
+    transform: scale(0.92);
+    opacity: 0.9;
+}
+
+.operation.active {
+    background-color: white !important;
+    color: #ff9500 !important;
+}
