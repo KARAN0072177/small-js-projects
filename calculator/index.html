@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="brand">CASIO</div>
+        <div class="display">
+            <div class="screen">0</div>
+        </div>
+        <div class="buttons">
+            <button class="function" data-action="clear">AC</button>
+            <button class="function" data-action="sign">+/-</button>
+            <button class="function" data-action="percent">%</button>
+            <button class="operation" data-action="divide">÷</button>
+            
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button class="operation" data-action="multiply">×</button>
+            
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button class="operation" data-action="subtract">-</button>
+            
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button class="operation" data-action="add">+</button>
+            
+            <button data-number="0" class="zero">0</button>
+            <button data-number=".">.</button>
+            <button class="operation equals" data-action="calculate">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

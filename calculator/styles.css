@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 15px;
+    border: 2px solid #999;
+}
+
+.brand {
+    font-family: 'Arial Black', sans-serif;
+    color: #333;
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.display {
+    background-color: #e0e0e0;
+    border: 2px inset #999;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+    height: 60px;
+}
+
+.screen {
+    font-size: 2.5rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    transition: all 0.1s;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.function {
+    background-color: #e0e0e0;
+}
+
+.operation {
+    background-color: #ff9500;
+    color: white;
+}
+
+.equals {
+    background-color: #ff9500;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+button[data-number] {
+    background-color: #f0f0f0;
+}
+
+button[data-number="0"] {
+    grid-column: span 2;
+}
